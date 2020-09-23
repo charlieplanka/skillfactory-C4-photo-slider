@@ -1,6 +1,7 @@
 // TODO
-// 2 — fix right button mysterious disappearance after click
-// 3 — remove outlines from buttons on mouse click
+// — fix right button mysterious disappearance after click
+// — fix animation freeze after fast clicking
+// — remove outlines from buttons on mouse click
 
 class Photo {
     constructor(htmlClass) {
