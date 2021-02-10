@@ -4,7 +4,6 @@ body {
 	display: flex;
 	justify-content: center;
     background-image: url(background-meadow.jpg);
-    background-image: 
 	background-size: cover;
 }
 
@@ -64,6 +63,21 @@ body {
 	position: absolute;
 	top: 45%;
 	left: 5%;
+}
+
+.photo-animation {
+  animation-name: appear;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 .photo-gallery > .right-photo,

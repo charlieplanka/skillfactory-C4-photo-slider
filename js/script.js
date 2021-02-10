@@ -97,15 +97,9 @@ function movePhotosLeft(photos) {
 
 function animatePhotoAppearance(selector) {
     photo = document.querySelector(selector);
-    photo.style.opacity = 0;
-    let opacity = 0;
-    id = setInterval(() => {
-        if (opacity < 1) {
-            opacity += 0.01;
-            document.querySelector(selector).style.opacity = opacity;
-        } else {
-            clearInterval(id);  // fix the timer
-        }
-    }, 5)
+    photo.classList.add('photo-animation')
+    setTimeout(() => {
+        photo.classList.remove('photo-animation')
+    }, 300);
 }
 
