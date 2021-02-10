@@ -1,6 +1,4 @@
 // TODO
-// — fix right button mysterious disappearance after click
-// — fix animation freeze after fast clicking
 // — remove outlines from buttons on mouse click
 
 class Photo {
@@ -75,7 +73,7 @@ let rightButton = document.querySelector(".right-button");
 
 rightButton.addEventListener("click", function () {
     movePhotosRight(photos);
-    animatePhotoAppearance(".main-photo");
+    animatePhotoAppearance(".main-photo-element");
 })
 
 function movePhotosRight(photos) {
@@ -87,7 +85,7 @@ let leftButton = document.querySelector(".left-button");
 
 leftButton.addEventListener("click", function () {
     movePhotosLeft(photos);
-    animatePhotoAppearance(".main-photo");
+    animatePhotoAppearance(".main-photo-element");
 })
 
 function movePhotosLeft(photos) {
