@@ -1,6 +1,3 @@
-// TODO
-// — remove outlines from buttons on mouse click
-
 class Photo {
     constructor(htmlClass) {
         this.htmlElement = document.querySelector(htmlClass);
